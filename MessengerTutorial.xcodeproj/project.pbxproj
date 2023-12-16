@@ -22,6 +22,7 @@
 		C755DBA02B2DB93E000292D0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755DB9F2B2DB93E000292D0 /* ProfileViewModel.swift */; };
 		C76C7C622B2E0DD70052742A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C612B2E0DD70052742A /* User.swift */; };
 		C76C7C652B2E15080052742A /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C642B2E15080052742A /* CircularProfileImageView.swift */; };
+		C76C7C682B2E26100052742A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C672B2E26100052742A /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		C755DB9F2B2DB93E000292D0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C76C7C612B2E0DD70052742A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C76C7C642B2E15080052742A /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		C76C7C672B2E26100052742A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				C74E04862B2C06410066095B /* ActiveNow */,
 				C74E047D2B2BF1170066095B /* Authentication */,
+				C76C7C662B2E25FA0052742A /* Chat */,
 				C76C7C632B2E14C10052742A /* Components */,
 				C74E04832B2C04BF0066095B /* Inbox */,
 				C74E048B2B2C11CE0066095B /* New Message */,
@@ -220,6 +223,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		C76C7C662B2E25FA0052742A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C76C7C672B2E26100052742A /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +305,7 @@
 				C74E04922B2C19310066095B /* ProfileView.swift in Sources */,
 				C74E048D2B2C11EE0066095B /* NewMessageView.swift in Sources */,
 				C74E04802B2BF1470066095B /* LoginView.swift in Sources */,
+				C76C7C682B2E26100052742A /* ChatView.swift in Sources */,
 				C74E046C2B2BF0B00066095B /* ContentView.swift in Sources */,
 				C76C7C652B2E15080052742A /* CircularProfileImageView.swift in Sources */,
 				C74E04852B2C04DC0066095B /* InboxView.swift in Sources */,
