@@ -53,6 +53,9 @@
 		C76C7CA32B2E464F0052742A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C76C7CA22B2E464F0052742A /* FirebaseRemoteConfigSwift */; };
 		C76C7CA52B2E464F0052742A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C76C7CA42B2E464F0052742A /* FirebaseStorage */; };
 		C76C7CA72B2E464F0052742A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C76C7CA62B2E464F0052742A /* FirebaseStorageCombine-Community */; };
+		C76C7CAB2B2E4C100052742A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7CAA2B2E4C100052742A /* LoginViewModel.swift */; };
+		C76C7CAD2B2E4C430052742A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7CAC2B2E4C430052742A /* RegistrationViewModel.swift */; };
+		C76C7CAF2B2E4C5D0052742A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7CAE2B2E4C5D0052742A /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		C76C7C692B2E2D680052742A /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		C76C7C6B2B2E35050052742A /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		C76C7C6F2B2E45CF0052742A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C76C7CAA2B2E4C100052742A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C76C7CAC2B2E4C430052742A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		C76C7CAE2B2E4C5D0052742A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +217,8 @@
 		C74E047D2B2BF1170066095B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				C76C7CA92B2E4BF70052742A /* Service */,
+				C76C7CA82B2E4BED0052742A /* ViewModel */,
 				C74E047E2B2BF1370066095B /* View */,
 			);
 			path = Authentication;
@@ -292,6 +300,23 @@
 				C76C7C6B2B2E35050052742A /* ChatBubble.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		C76C7CA82B2E4BED0052742A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C76C7CAA2B2E4C100052742A /* LoginViewModel.swift */,
+				C76C7CAC2B2E4C430052742A /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C76C7CA92B2E4BF70052742A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C76C7CAE2B2E4C5D0052742A /* AuthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,15 +423,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C74E048A2B2C08AB0066095B /* InboxRowView.swift in Sources */,
+				C76C7CAD2B2E4C430052742A /* RegistrationViewModel.swift in Sources */,
 				C74E04922B2C19310066095B /* ProfileView.swift in Sources */,
 				C74E048D2B2C11EE0066095B /* NewMessageView.swift in Sources */,
 				C74E04802B2BF1470066095B /* LoginView.swift in Sources */,
 				C76C7C682B2E26100052742A /* ChatView.swift in Sources */,
+				C76C7CAF2B2E4C5D0052742A /* AuthService.swift in Sources */,
 				C74E046C2B2BF0B00066095B /* ContentView.swift in Sources */,
 				C76C7C6A2B2E2D680052742A /* ChatMessageCell.swift in Sources */,
 				C76C7C6C2B2E35050052742A /* ChatBubble.swift in Sources */,
 				C76C7C652B2E15080052742A /* CircularProfileImageView.swift in Sources */,
 				C74E04852B2C04DC0066095B /* InboxView.swift in Sources */,
+				C76C7CAB2B2E4C100052742A /* LoginViewModel.swift in Sources */,
 				C74E04882B2C065B0066095B /* ActiveNowView.swift in Sources */,
 				C755DBA02B2DB93E000292D0 /* ProfileViewModel.swift in Sources */,
 				C76C7C622B2E0DD70052742A /* User.swift in Sources */,
