@@ -20,6 +20,7 @@
 		C74E04922B2C19310066095B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E04912B2C19310066095B /* ProfileView.swift */; };
 		C74E04942B2C1AB70066095B /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E04932B2C1AB70066095B /* SettingsOptionsViewModel.swift */; };
 		C755DBA02B2DB93E000292D0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755DB9F2B2DB93E000292D0 /* ProfileViewModel.swift */; };
+		C76C7C622B2E0DD70052742A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C612B2E0DD70052742A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		C74E04912B2C19310066095B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C74E04932B2C1AB70066095B /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		C755DB9F2B2DB93E000292D0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C76C7C612B2E0DD70052742A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		C74E04782B2BF0F20066095B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C76C7C612B2E0DD70052742A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				C74E04852B2C04DC0066095B /* InboxView.swift in Sources */,
 				C74E04882B2C065B0066095B /* ActiveNowView.swift in Sources */,
 				C755DBA02B2DB93E000292D0 /* ProfileViewModel.swift in Sources */,
+				C76C7C622B2E0DD70052742A /* User.swift in Sources */,
 				C74E046A2B2BF0B00066095B /* MessengerTutorialApp.swift in Sources */,
 				C74E04942B2C1AB70066095B /* SettingsOptionsViewModel.swift in Sources */,
 				C74E04822B2BF82D0066095B /* RegistrationView.swift in Sources */,
