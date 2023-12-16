@@ -23,6 +23,8 @@
 		C76C7C622B2E0DD70052742A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C612B2E0DD70052742A /* User.swift */; };
 		C76C7C652B2E15080052742A /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C642B2E15080052742A /* CircularProfileImageView.swift */; };
 		C76C7C682B2E26100052742A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C672B2E26100052742A /* ChatView.swift */; };
+		C76C7C6A2B2E2D680052742A /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C692B2E2D680052742A /* ChatMessageCell.swift */; };
+		C76C7C6C2B2E35050052742A /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7C6B2B2E35050052742A /* ChatBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		C76C7C612B2E0DD70052742A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C76C7C642B2E15080052742A /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		C76C7C672B2E26100052742A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C76C7C692B2E2D680052742A /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		C76C7C6B2B2E35050052742A /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				C76C7C672B2E26100052742A /* ChatView.swift */,
+				C76C7C692B2E2D680052742A /* ChatMessageCell.swift */,
+				C76C7C6B2B2E35050052742A /* ChatBubble.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -307,6 +313,8 @@
 				C74E04802B2BF1470066095B /* LoginView.swift in Sources */,
 				C76C7C682B2E26100052742A /* ChatView.swift in Sources */,
 				C74E046C2B2BF0B00066095B /* ContentView.swift in Sources */,
+				C76C7C6A2B2E2D680052742A /* ChatMessageCell.swift in Sources */,
+				C76C7C6C2B2E35050052742A /* ChatBubble.swift in Sources */,
 				C76C7C652B2E15080052742A /* CircularProfileImageView.swift in Sources */,
 				C74E04852B2C04DC0066095B /* InboxView.swift in Sources */,
 				C74E04882B2C065B0066095B /* ActiveNowView.swift in Sources */,
