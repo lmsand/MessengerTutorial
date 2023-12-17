@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72A16032B2E9BB100E1F57B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A16022B2E9BB100E1F57B /* UserService.swift */; };
 		C74E046A2B2BF0B00066095B /* MessengerTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E04692B2BF0B00066095B /* MessengerTutorialApp.swift */; };
 		C74E046C2B2BF0B00066095B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E046B2B2BF0B00066095B /* ContentView.swift */; };
 		C74E046E2B2BF0B00066095B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74E046D2B2BF0B00066095B /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C72A16022B2E9BB100E1F57B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		C74E04662B2BF0B00066095B /* MessengerTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74E04692B2BF0B00066095B /* MessengerTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerTutorialApp.swift; sourceTree = "<group>"; };
 		C74E046B2B2BF0B00066095B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		C74E04772B2BF0EC0066095B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C72A16022B2E9BB100E1F57B /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				C76C7C652B2E15080052742A /* CircularProfileImageView.swift in Sources */,
 				C74E04852B2C04DC0066095B /* InboxView.swift in Sources */,
 				C76C7CAB2B2E4C100052742A /* LoginViewModel.swift in Sources */,
+				C72A16032B2E9BB100E1F57B /* UserService.swift in Sources */,
 				C74E04882B2C065B0066095B /* ActiveNowView.swift in Sources */,
 				C755DBA02B2DB93E000292D0 /* ProfileViewModel.swift in Sources */,
 				C76C7C622B2E0DD70052742A /* User.swift in Sources */,
