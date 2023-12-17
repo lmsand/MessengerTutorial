@@ -34,7 +34,6 @@ struct InboxView: View {
             })
             .fullScreenCover(isPresented: $showNewMessageView, content: {
                 NewMessageView()
-                NewMessageView()
             })
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
