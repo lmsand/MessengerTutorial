@@ -65,6 +65,7 @@
 		C76C7CB32B2E585D0052742A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7CB22B2E585D0052742A /* ContentViewModel.swift */; };
 		C7B73E602B2F9BF6004CBC3C /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B73E5F2B2F9BF6004CBC3C /* ChatService.swift */; };
 		C7B73E632B2F9D0B004CBC3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B73E622B2F9D0B004CBC3C /* Constants.swift */; };
+		C7C934362B2FD314000C03FA /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C934352B2FD314000C03FA /* InboxService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		C76C7CB22B2E585D0052742A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		C7B73E5F2B2F9BF6004CBC3C /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		C7B73E622B2F9D0B004CBC3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7C934352B2FD314000C03FA /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +312,7 @@
 		C74E04832B2C04BF0066095B /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				C7C934342B2FD301000C03FA /* Service */,
 				C72A16052B2EA54700E1F57B /* View */,
 				C72A16042B2EA53F00E1F57B /* ViewModel */,
 			);
@@ -426,6 +429,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C7C934342B2FD301000C03FA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C7C934352B2FD314000C03FA /* InboxService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -540,6 +551,7 @@
 				C76C7C682B2E26100052742A /* ChatView.swift in Sources */,
 				C76C7CAF2B2E4C5D0052742A /* AuthService.swift in Sources */,
 				C74E046C2B2BF0B00066095B /* ContentView.swift in Sources */,
+				C7C934362B2FD314000C03FA /* InboxService.swift in Sources */,
 				C7B73E632B2F9D0B004CBC3C /* Constants.swift in Sources */,
 				C76C7C6A2B2E2D680052742A /* ChatMessageCell.swift in Sources */,
 				C76C7C6C2B2E35050052742A /* ChatBubble.swift in Sources */,
