@@ -20,20 +20,31 @@ struct InboxView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ActiveNowView()
-                
                 List {
+                    ActiveNowView()
+                        .listRowSeparator(.hidden)
+                        .listRowInsets(EdgeInsets())
+                        .padding(.vertical)
+                        .padding(.horizontal, 4)
                     ForEach(viewModel.recentMessages) { message in
-                        InboxRowView(message: message)
+                        ZStack {
+                            NavigationLink(value: message) {
+                                EmptyView()
+                            }.opacity(0.0)
+                            
+                            InboxRowView(message: message)
+                        }
                     }
                 }
-                .listStyle(PlainListStyle())
-                .frame(height: UIScreen.main.bounds.height - 120)
-            }
+            .listStyle(PlainListStyle())
             .onChange(of: selectedUser) {
                 showChat = true
             }
+            .navigationDestination(for: Message.self, destination: { message in
+                if let user = message.user {
+                    ChatView(user: user)
+                }
+            })
             .navigationDestination(for: User.self, destination: { user in
                 ProfileView(user: user)
             })
