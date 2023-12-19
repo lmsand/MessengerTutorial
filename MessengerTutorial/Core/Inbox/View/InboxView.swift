@@ -36,6 +36,8 @@ struct InboxView: View {
                         }
                     }
                 }
+                .navigationTitle("Chats")
+                .navigationBarTitleDisplayMode(.inline)
             .listStyle(PlainListStyle())
             .onChange(of: selectedUser) {
                 showChat = true
@@ -45,8 +47,13 @@ struct InboxView: View {
                     ChatView(user: user)
                 }
             })
-            .navigationDestination(for: User.self, destination: { user in
-                ProfileView(user: user)
+            .navigationDestination(for: Route.self, destination: { route in
+                switch route {
+                case .profile(let user):
+                    ProfileView(user: user)
+                case .chatView(let user):
+                    ChatView(user: user)
+                }
             })
             .navigationDestination(isPresented: $showChat, destination: {
                 if let user = selectedUser {
@@ -59,13 +66,15 @@ struct InboxView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
-                        NavigationLink(value: user) {
-                            CircularProfileImageView(user: user, size: .xSmall)
+                        if let user {
+                            NavigationLink(value: Route.profile(user)) {
+                                CircularProfileImageView(user: user, size: .xSmall)
+                            }
                         }
                         
-                        Text("Chats")
-                            .font(.title)
-                            .fontWeight(.semibold)
+//                        Text("Chats")
+//                            .font(.title)
+//                            .fontWeight(.semibold)
                         
                     }
                 }
